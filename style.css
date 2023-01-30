@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-2381.jpg?w=1480&t=st=1675081676~exp=1675082276~hmac=74124d7a6c4ab54f1bd3328cdaea2358a02aa3a9434b9080c3ba13ac9b3b3abe');
+  background-repeat: none;
+  background-size: cover;
+}
+/* overall app  */
+.weather-app {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  max-width: 800px;
+  height: 100vh;
+  border: 1px solid black;
+  margin: 0 auto;
+
+  display: flex;
+}
+/* side bar  */
+.aside-bar {
+  background: rgb(141, 207, 245);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 240px;
+  overflow: hidden;
+  padding: 10px;
+}
+.aside-bar .searchbar {
+  margin: 20px auto;
+}
+
+.aside-bar .searchbar input {
+  height: 30px;
+  border-radius: 5px;
+  border: #999;
+  padding: 10px;
+}
+
+.aside-bar .searchbar input[type='button'] {
+  padding: 3px;
+  font-size: 14px;
+  width: 50px;
+  background-color: blue;
+  color: #fff;
+}
+
+.aside-bar .searchbar input[type='button']:hover {
+  cursor: pointer;
+}
+.aside-bar .weather-icon {
+  margin-top: 50px;
+}
+.aside-bar .current-weather {
+  margin-top: 20px;
+}
+/* main content  */
+.main {
+  padding: 20px;
+  background-color: rgb(251, 251, 251);
+  margin-left: 240px;
+  width: calc(800px - 240px);
+  height: 100%;
+  outline: 1px solid black;
+}
+
+/* top buttons from main */
+.main .top-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .top-btns button {
+  padding: 5px;
+  border-radius: 50%;
+  border: rgb(255, 255, 255);
+  margin-left: 3px;
+}
+
+.main .top-btns #celcius {
+  background-color: #000;
+  color: #fff;
+}
+
+/* center content from main */
+.main .weekly-forecast {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 60px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* title */
+.title {
+  margin: 40px 0;
+}
+
+/* main hightlight content */
+
+.today-highlight {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.today-highlight .cards-row1 {
+  display: flex;
+}
+.today-highlight .cards-row2 {
+  display: flex;
+}
+
+.card {
+  width: 150px;
+  height: 125px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 20px;
+}
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card .card-content > p {
+  color: #aaaaaa;
+  font-size: 14px;
+}
+
+.card .card-content #center {
+  text-align: center;
+  color: #000;
+  font-size: 24px;
+  margin: 10px 0;
+}
